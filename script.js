@@ -9,7 +9,7 @@ cards.forEach((card) => {
 function dragstart() {
   cards.forEach((card) => card.classList.add("highlight"))
 
-  this.classList.add('is-dragging')
+  this.classList.add("is-dragging")
 }
 function drag() {}
 function dragend() {
@@ -27,10 +27,10 @@ cards.forEach((card) => {
 
 function dragenter() {}
 function dragover() {
-  this.classList.add('over')
+  this.classList.add("over")
 
   //get dragging card
-  const cardBeingDragged = document.querySelector('.is-dragging')
+  const cardBeingDragged = document.querySelector(".is-dragging")
 
   this.parentNode.append(cardBeingDragged)
 }
